@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file details any extensions needed to the data model to store data from this source, everything else is automatically generated from the model description so this is all we need to do to add to the model. -->
+
+<classes>
+    <class name="Protein" is-interface="true">
+        <collection name="my_features"  referenced-type="NewFeature" reverse-reference="protein" />
+        <attribute name="extraData" type="java.lang.String"/>
+    </class>
+
+    <class name="NewFeature" is-interface="true">
+        <attribute name="identifier" type="java.lang.String"/>
+        <attribute name="confidence" type="java.lang.Double"/>
+        <reference name="protein" referenced-type="Protein" reverse-reference="my_features" />
+    </class>
+
+</classes>
