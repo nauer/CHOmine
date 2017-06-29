@@ -43,9 +43,10 @@
           <cite>${WEB_PROPERTIES['project.citation']}</cite>
     </div>
 </div>
-<div class="funding-footer footer">
+<div class="footer">
   <!-- funding -->
-  <div class="funders"><fmt:message key="funding" /><fmt:message key="credits" /></div>
+  <div class="funders"><fmt:message key="funding" /></div>
+  <!-- <div class="credits"><fmt:message key="credits" /></div> -->
 </div>
 
 </div>
@@ -87,7 +88,7 @@
         <li><a href="http://www.humanmine.org" target="_blank">HumanMine</a></li>
     </ul>
 
-    <p class="footer-copy">&copy; 2002 - 2017 Department of Genetics, University of Cambridge, Downing Street,<br />
+    <p class="footer-copy">&copy; 2002 - 2016 Department of Genetics, University of Cambridge, Downing Street,<br />
         Cambridge CB2 3EH, United Kingdom</p>
 
     <div style="clear:both"></div>

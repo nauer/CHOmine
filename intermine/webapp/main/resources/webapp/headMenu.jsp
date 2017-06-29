@@ -82,6 +82,21 @@
           <fmt:message key="menu.api"/>
         </a>
       </li>
+      <li id="license"  <c:if test="${tab == 'license'}">class="activelink"</c:if>>
+        <a href="/${WEB_PROPERTIES['webapp.path']}/license.do">
+              <fmt:message key="menu.license"/>
+          </a>
+      </li>
+      <li id="chomodel"  <c:if test="${tab == 'chomodel'}">class="activelink"</c:if>>
+          <a href="https://chomine.boku.ac.at/chomodel" target="_new">
+              <fmt:message key="menu.chomodel"/>
+          </a>
+      </li>
+      <!-- TODO Add Tab<li id="api"  <c:if test="${tab == 'abba'}">class="activelink"</c:if>>
+        <a href="/${WEB_PROPERTIES['webapp.path']}/abba.do">
+            <fmt:message key="menu.abba"/>
+        </a>
+    </li> -->
       <li id="mymine"  <c:if test="${tab == 'mymine'}">class="activelink"</c:if>>
         <a href="/${WEB_PROPERTIES['webapp.path']}/mymine.do">
           <span><fmt:message key="menu.mymine"/></span>

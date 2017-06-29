@@ -50,8 +50,7 @@
       <tiles:put name="scope" value="${scope}"/>
     </tiles:insert>
 
-    <link rel="shortcut icon" type="image/x-icon" href="model/images/favicon.ico">
-
+    <link rel="shortcut icon" type="image/x-icon" href="model/images/favicon.ico">    
   </head>
 
   <!-- Check if the current page has fixed layout -->
