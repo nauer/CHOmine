@@ -87,16 +87,16 @@ public class UniProtFastaLoaderTaskTest extends TestCase
 
         Query q = new Query();
         QueryClass queryClass = new QueryClass(Protein.class);
-        QueryClass seqQueryClass = new QueryClass(Sequence.class);
+        //QueryClass seqQueryClass = new QueryClass(Sequence.class);
         q.addToSelect(queryClass);
-        q.addToSelect(seqQueryClass);
+        //q.addToSelect(seqQueryClass);
         q.addFrom(queryClass);
-        q.addFrom(seqQueryClass);
+        //q.addFrom(seqQueryClass);
 
         QueryObjectReference qor = new QueryObjectReference(queryClass, "sequence");
-        ContainsConstraint cc = new ContainsConstraint(qor, ConstraintOp.CONTAINS, seqQueryClass);
+        //ContainsConstraint cc = new ContainsConstraint(qor, ConstraintOp.CONTAINS, seqQueryClass);
 
-        q.setConstraint(cc);
+        //q.setConstraint(cc);
 
         Results r = os.execute(q);
 

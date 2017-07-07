@@ -1,0 +1,5 @@
+<project name="uniprot2geneid" default="default" basedir=".">
+  <description>build, test, package uniprot2geneid</description>
+  
+  <import file="../../../imbuild/source.xml"/>
+</project>
