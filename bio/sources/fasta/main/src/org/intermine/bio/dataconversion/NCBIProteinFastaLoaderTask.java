@@ -133,6 +133,8 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
           if (refseqId != null)
           {
               bioEntity.setFieldValue("refseqAccession", refseqId);
+              // Use RefSeq id instead of deprecated gi id
+              bioEntity.setFieldValue("primaryIdentifier", refseqId);
               bioEntity.setFieldValue("name", desc);
           }
         }
