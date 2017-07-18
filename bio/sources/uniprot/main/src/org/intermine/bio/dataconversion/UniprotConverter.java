@@ -931,6 +931,14 @@ public class UniprotConverter extends BioDirectoryConverter
                 for (String identifier : values) {
                     setCrossReference(protein.getIdentifier(), identifier, key, false);
                 }
+                // Set RefSeq Accession if refseqAccession is in model : nauer
+                if (protein.checkAttribute("refseqAccession")){
+	                if (key.equals("RefSeq")){
+	                	protein.setAttribute("refseqAccession", dbref.getValue().toArray()[0].toString());
+	                }	                	
+                	
+                }
+                
             }
 
 

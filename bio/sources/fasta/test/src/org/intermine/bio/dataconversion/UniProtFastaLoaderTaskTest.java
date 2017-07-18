@@ -100,7 +100,7 @@ public class UniProtFastaLoaderTaskTest extends TestCase
 
         Results r = os.execute(q);
 
-        assertEquals(1, r.size());
+        assertEquals(2, r.size());
 
         Protein protein = (Protein) ((List) r.get(0)).get(0);
 

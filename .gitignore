@@ -12,7 +12,7 @@ executeLog*
 *.class
 productionLog
 *~
-
+.metadata/
 !/intermine/webservice/client/download/dist/
 
 # /intermine/objectstore/main/

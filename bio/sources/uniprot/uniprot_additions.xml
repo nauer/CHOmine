@@ -43,6 +43,7 @@
   <collection name="publications" referenced-type="Publication"/>
 </class>
 <class name="Gene" is-interface="true">
+  <attribute name="refseqAccession" type="java.lang.String"/>
   <collection name="goAnnotation" referenced-type="GOAnnotation"/>
 </class>
 <class name="Comment" is-interface="true">
