@@ -6,14 +6,15 @@ env:
   - TESTMODEL_URL=http://localhost:8080/intermine-demo
   - TESTMODEL_PATH=intermine-demo  
   matrix:
-  - TEST_SUITE=webapp
+  # Disable Selenium tests    
+  # - TEST_SUITE=webapp
   - TEST_SUITE=bio
   - TEST_SUITE=ws CLIENT=JS
   - TEST_SUITE=ws CLIENT=PY
   - TEST_SUITE=all
   - TEST_SUITE=webtasks
   - TEST_SUITE=checkstyle
-sudo: false
+sudo: true
 jdk:
 - openjdk8
 before_script:
