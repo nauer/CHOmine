@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<classes>
-    <class name="Protein" is-interface="true">
-        <attribute name="refseqAccession" type="java.lang.String"/>
-    </class>
-</classes>

@@ -16,6 +16,7 @@ import org.intermine.model.bio.DataSet;
 import org.intermine.model.bio.Organism;
 import org.intermine.objectstore.ObjectStoreException;
 import org.biojava.bio.seq.Sequence;
+import org.biojava3.core.sequence.ProteinSequence;
 
 /**
  * A loader that works for NCBI protein FASTA files:
@@ -36,17 +37,20 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
        * @param bioJavaSequence the Sequenece
        * @return an identifier
        */
-      protected String getProteinName(Sequence bioJavaSequence)
+      protected String getProteinName(ProteinSequence bioJavaSequence)
       {
-          String name = bioJavaSequence.getName();
+          // gi|91176213|ref|YP_537129.1| NADH dehydrogenase subunit 5 (mitochondrion) [Cricetulus griseus]
+    	  String name = bioJavaSequence.getOriginalHeader();
 
-          if (name.contains("|"))
+          if (name.contains("ref"))
           {
-              String[] bits = name.split("\\|");
+              String[] bits = name.split("ref\\|");
               if (bits.length < 2) {
                   return null;
               }
               name = bits[bits.length - 1];
+              
+              name = name.split("\\|")[0];
           }
           else
             return null;
@@ -58,32 +62,29 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
      * Do any extra processing needed for this record (extra attributes, objects, references etc.)
      * This method is called before the new objects are stored
      * @param bioJavaSequence the BioJava Sequence
-     * @param sequence the Sequence
+     * @param ncbiProteinSequence the Protein Sequence
      * @param bioEntity the object that references the Sequence
      * @param organism the Organism object for the new InterMineObject
      * @param dataSet the DataSet object
      * @throws ObjectStoreException if a store() fails during processing
      */
+    
     @Override
-//     protected void  extraProcessing(Sequence bioJavaSequence, org.intermine.model.bio.Sequence
-//             flymineSequence, BioEntity bioEntity, Organism organism, DataSet dataSet)
-//         throws ObjectStoreException {
-//         // default - no extra processing
-//     }
-// }
-
-    protected void extraProcessing(Sequence bioJavaSequence,
-            org.intermine.model.bio.Sequence sequence,
-            BioEntity bioEntity, Organism organism, DataSet dataSet)
-        throws ObjectStoreException
-        {
-          String header = bioJavaSequence.getName();
-
-          String refseqId = getProteinName(bioJavaSequence);
-
-          if (refseqId != null)
-          {
-              bioEntity.setFieldValue("refseqAccession", refseqId);
-          }
-        }
+    protected void  extraProcessing(ProteinSequence bioJavaSequence, org.intermine.model.bio.Sequence ncbiProteinSequence, BioEntity bioEntity, Organism organism, DataSet dataSet)
+    		throws ObjectStoreException 
+    {
+    	//String header = bioJavaSequence.getOriginalHeader();
+		
+    	String refseqId = getProteinName(bioJavaSequence);
+	
+    	if (refseqId != null)
+    	{
+    		bioEntity.setFieldValue("refseqAccession", refseqId);
+    	}
+//    	System.out.print("DEBUG: ");
+//    	System.out.print(bioJavaSequence.getOriginalHeader());
+//    	System.out.print(" - ");
+//    	System.out.println(refseqId);
+	
+	}
 }

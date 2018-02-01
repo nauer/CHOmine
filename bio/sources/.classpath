@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="biogrid/main/src"/>
+	<classpathentry kind="src" path="biogrid/test/src"/>
+	<classpathentry kind="src" path="cgr-brinkrolf-gff/main/src"/>
+	<classpathentry kind="src" path="cgr-lewis-gff/main/src"/>
+	<classpathentry kind="src" path="cgr-uniprot-gff-merger/main/src"/>
+	<classpathentry kind="src" path="chado-db/main/src"/>
+	<classpathentry kind="src" path="chado-db/test/src"/>
+	<classpathentry kind="src" path="cho-ncbi-gff/main/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-compara/main/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-compara/test/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-gwas-db/main/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-snp-db/main/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-snp-db/test/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-snp/main/src"/>
+	<classpathentry kind="src" path="ensembl/ensembl-snp/test/src"/>
+	<classpathentry kind="src" path="entrez-organism/main/src"/>
+	<classpathentry kind="src" path="entrez-organism/test/src"/>
+	<classpathentry kind="src" path="example-sources/kegg-example/main/src"/>
+	<classpathentry kind="src" path="example-sources/kegg-identifiers/main/src"/>
+	<classpathentry kind="src" path="example-sources/malaria-gff/main/src"/>
+	<classpathentry kind="src" path="fasta/main/src"/>
+	<classpathentry kind="src" path="fasta/test/src"/>
+	<classpathentry kind="src" path="fly/affy-probes/main/src"/>
+	<classpathentry kind="src" path="fly/affy-probes/test/src"/>
+	<classpathentry kind="src" path="fly/arbeitman-items-xml/main/src"/>
+	<classpathentry kind="src" path="fly/bdgp-clone/main/src"/>
+	<classpathentry kind="src" path="fly/bdgp-clone/test/src"/>
+	<classpathentry kind="src" path="fly/bdgp-insitu/main/src"/>
+	<classpathentry kind="src" path="fly/bdgp-insitu/test/src"/>
+	<classpathentry kind="src" path="fly/drosdel-gff/main/src"/>
+	<classpathentry kind="src" path="fly/drosophila-homology/main/src"/>
+	<classpathentry kind="src" path="fly/drosophila-homology/test/src"/>
+	<classpathentry kind="src" path="fly/fly-fish/main/src"/>
+	<classpathentry kind="src" path="fly/fly-fish/test/src"/>
+	<classpathentry kind="src" path="fly/flyatlas/main/src"/>
+	<classpathentry kind="src" path="fly/flyatlas/test/src"/>
+	<classpathentry kind="src" path="fly/flybase-alleles/main/src"/>
+	<classpathentry kind="src" path="fly/flybase-alleles/test/src"/>
+	<classpathentry kind="src" path="fly/flybase-expression/main/src"/>
+	<classpathentry kind="src" path="fly/flybase-expression/test/src"/>
+	<classpathentry kind="src" path="fly/flyreg/main/src"/>
+	<classpathentry kind="src" path="fly/flyreg/test/src"/>
+	<classpathentry kind="src" path="fly/long-oligo/main/src"/>
+	<classpathentry kind="src" path="fly/long-oligo/test/src"/>
+	<classpathentry kind="src" path="fly/miranda/main/src"/>
+	<classpathentry kind="src" path="fly/miranda/test/src"/>
+	<classpathentry kind="src" path="fly/redfly/main/src"/>
+	<classpathentry kind="src" path="fly/redfly/test/src"/>
+	<classpathentry kind="src" path="fly/retired/flyrnai-screens/main/src"/>
+	<classpathentry kind="src" path="fly/retired/flyrnai-screens/test/src"/>
+	<classpathentry kind="src" path="fly/retired/homophila/main/src"/>
+	<classpathentry kind="src" path="fly/retired/homophila/test/src"/>
+	<classpathentry kind="src" path="fly/retired/orthologue/main/src"/>
+	<classpathentry kind="src" path="fly/retired/orthologue/test/src"/>
+	<classpathentry kind="src" path="fly/retired/protein-structure/main/src"/>
+	<classpathentry kind="src" path="fly/retired/protein-structure/test/src"/>
+	<classpathentry kind="src" path="fly/retired/tiffin-expression/main/src"/>
+	<classpathentry kind="src" path="fly/retired/tiffin-expression/test/src"/>
+	<classpathentry kind="src" path="fly/retired/tiffin/main/src"/>
+	<classpathentry kind="src" path="fly/retired/tiling-path/main/src"/>
+	<classpathentry kind="src" path="fly/retired/tiling-path/test/src"/>
+	<classpathentry kind="src" path="fly/retired/wormbase-rnai/main/src"/>
+	<classpathentry kind="src" path="fly/retired/wormbase-rnai/test/src"/>
+	<classpathentry kind="src" path="fly/rnai/main/src"/>
+	<classpathentry kind="src" path="fly/rnai/test/src"/>
+	<classpathentry kind="src" path="go-annotation/main/src"/>
+	<classpathentry kind="src" path="go-annotation/test/src"/>
+	<classpathentry kind="src" path="gtex/main/src"/>
+	<classpathentry kind="src" path="gtex/test/src"/>
+	<classpathentry kind="src" path="homologene/main/src"/>
+	<classpathentry kind="src" path="homologene/test/src"/>
+	<classpathentry kind="src" path="human/arrayexpress-atlas/main/src"/>
+	<classpathentry kind="src" path="human/atlas-express/main/src"/>
+	<classpathentry kind="src" path="human/clinvar/main/src"/>
+	<classpathentry kind="src" path="human/clinvar/test/src"/>
+	<classpathentry kind="src" path="human/ensembl-hgnc/main/src"/>
+	<classpathentry kind="src" path="human/hgnc/main/src"/>
+	<classpathentry kind="src" path="human/hpo-annotation/main/src"/>
+	<classpathentry kind="src" path="human/hpo-annotation/test/src"/>
+	<classpathentry kind="src" path="human/huge-gwas/main/src"/>
+	<classpathentry kind="src" path="human/huge-gwas/test/src"/>
+	<classpathentry kind="src" path="human/human-gene/main/src"/>
+	<classpathentry kind="src" path="human/human-gene/test/src"/>
+	<classpathentry kind="src" path="human/ncbi-gene/main/src"/>
+	<classpathentry kind="src" path="human/ncbi-gene/test/src"/>
+	<classpathentry kind="src" path="human/ncbi-summaries/main/src"/>
+	<classpathentry kind="src" path="human/ncbi-summaries/test/src"/>
+	<classpathentry kind="src" path="human/omim/main/src"/>
+	<classpathentry kind="src" path="human/omim/test/src"/>
+	<classpathentry kind="src" path="human/orphanet/main/src"/>
+	<classpathentry kind="src" path="human/orphanet/test/src"/>
+	<classpathentry kind="src" path="human/protein-atlas/main/src"/>
+	<classpathentry kind="src" path="human/protein-atlas/test/src"/>
+	<classpathentry kind="src" path="identifiers/anopheles-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/anopheles-identifiers/test/src"/>
+	<classpathentry kind="src" path="identifiers/ensembl-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/ensembl-identifiers/test/src"/>
+	<classpathentry kind="src" path="identifiers/flybase-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/flybase-identifiers/test/src"/>
+	<classpathentry kind="src" path="identifiers/mgi-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/mgi-identifiers/test/src"/>
+	<classpathentry kind="src" path="identifiers/rgd-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/sgd-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/sgd-identifiers/test/src"/>
+	<classpathentry kind="src" path="identifiers/wormbase-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/wormbase-identifiers/test/src"/>
+	<classpathentry kind="src" path="identifiers/zfin-identifiers/main/src"/>
+	<classpathentry kind="src" path="identifiers/zfin-identifiers/test/src"/>
+	<classpathentry kind="src" path="interpro-go/main/src"/>
+	<classpathentry kind="src" path="interpro-go/test/src"/>
+	<classpathentry kind="src" path="interpro/main/src"/>
+	<classpathentry kind="src" path="interpro/test/src"/>
+	<classpathentry kind="src" path="kegg-orthologues/main/src"/>
+	<classpathentry kind="src" path="kegg-orthologues/test/src"/>
+	<classpathentry kind="src" path="kegg-pathway/main/src"/>
+	<classpathentry kind="src" path="kegg-pathway/test/src"/>
+	<classpathentry kind="src" path="modmine/cdna-clone/main/src"/>
+	<classpathentry kind="src" path="modmine/fly-expression-score/main/src"/>
+	<classpathentry kind="src" path="modmine/tf-mrna-network/main/src"/>
+	<classpathentry kind="src" path="modmine/worm-expression-score/main/src"/>
+	<classpathentry kind="src" path="modmine/worm-network/main/src"/>
+	<classpathentry kind="src" path="mosquito/anoest/main/src"/>
+	<classpathentry kind="src" path="mosquito/anoest/test/src"/>
+	<classpathentry kind="src" path="mosquito/anoph-expr/main/src"/>
+	<classpathentry kind="src" path="mosquito/anoph-expr/test/src"/>
+	<classpathentry kind="src" path="mouse/mgi-alleles/main/src"/>
+	<classpathentry kind="src" path="ncbi-gff/main/src"/>
+	<classpathentry kind="src" path="ncbi-gff/test/src"/>
+	<classpathentry kind="src" path="orthodb/main/src"/>
+	<classpathentry kind="src" path="orthodb/test/src"/>
+	<classpathentry kind="src" path="panther/main/src"/>
+	<classpathentry kind="src" path="panther/test/src"/>
+	<classpathentry kind="src" path="pdb/main/src"/>
+	<classpathentry kind="src" path="pdb/test/src"/>
+	<classpathentry kind="src" path="protein2ipr/main/src"/>
+	<classpathentry kind="src" path="protein2ipr/test/src"/>
+	<classpathentry kind="src" path="psi-complexes/main/src"/>
+	<classpathentry kind="src" path="psi-complexes/test/src"/>
+	<classpathentry kind="src" path="psi/main/src"/>
+	<classpathentry kind="src" path="psi/test/src"/>
+	<classpathentry kind="src" path="pubmed-gene/main/src"/>
+	<classpathentry kind="src" path="pubmed-gene/test/src"/>
+	<classpathentry kind="src" path="reactome/main/src"/>
+	<classpathentry kind="src" path="reactome/test/src"/>
+	<classpathentry kind="src" path="retired/biopax/main/src"/>
+	<classpathentry kind="src" path="retired/biopax/test/src"/>
+	<classpathentry kind="src" path="signor/main/src"/>
+	<classpathentry kind="src" path="signor/test/src"/>
+	<classpathentry kind="src" path="treefam/main/src"/>
+	<classpathentry kind="src" path="treefam/test/src"/>
+	<classpathentry kind="src" path="uniprot-keywords/main/src"/>
+	<classpathentry kind="src" path="uniprot-keywords/test/src"/>
+	<classpathentry kind="src" path="uniprot/main/src"/>
+	<classpathentry kind="src" path="uniprot/test/src"/>
+	<classpathentry kind="src" path="update-data-sources/main/src"/>
+	<classpathentry kind="src" path="update-data-sources/test/src"/>
+	<classpathentry kind="src" path="update-publications/main/src"/>
+	<classpathentry kind="src" path="update-publications/test/src"/>
+	<classpathentry kind="src" path="vcf/main/src"/>
+	<classpathentry kind="src" path="vcf/test/src"/>
+	<classpathentry kind="lib" path="cho-ncbi-gff/main/dist/cho-ncbi-gff-tasks.jar"/>
+	<classpathentry kind="lib" path="entrez-organism/main/dist/main-tasks.jar"/>
+	<classpathentry kind="lib" path="fasta/main/dist/fasta-tasks.jar"/>
+	<classpathentry kind="lib" path="fasta/main/lib/biojava-1.7.1.jar"/>
+	<classpathentry kind="lib" path="pdb/main/lib/biojava-core-4.1.0.jar"/>
+	<classpathentry kind="lib" path="pdb/main/lib/biojava-structure-4.1.0.jar"/>
+	<classpathentry kind="lib" path="pdb/main/lib/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="lib" path="pdb/main/lib/vecmath-1.3.1.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/chebiWS-client-2.2.1.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jami-commons-1.1.3-20150304.115350-1.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jami-core-1.2.2-20150304.115305-4.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jami-mitab-1.1.2-20150304.115341-1.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jami-xml-1.1.3-20150304.115347-1.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jaxb-api-2.2.7.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jaxb-core-2.2.7.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jaxb-impl-2.2.7.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jgrapht-0.8.3.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/jsr173-1.0.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/stax-utils-20070216.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/stax2-api-3.0.3.jar"/>
+	<classpathentry kind="lib" path="psi-complexes/main/lib/woodstox-core-asl-4.0.6.jar"/>
+	<classpathentry kind="lib" path="pubmed-gene/main/dist/main-tasks.jar"/>
+	<classpathentry kind="lib" path="retired/biopax/main/lib/collections-generic-4.01.jar"/>
+	<classpathentry kind="lib" path="retired/biopax/main/lib/icu4j_3_4.jar"/>
+	<classpathentry kind="lib" path="retired/biopax/main/lib/iri.jar"/>
+	<classpathentry kind="lib" path="retired/biopax/main/lib/paxtools-4.1.6.jar"/>
+	<classpathentry kind="lib" path="retired/biopax/main/lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="retired/biopax/main/lib/slf4j-log4j12-1.5.6.jar"/>
+	<classpathentry kind="lib" path="update-publications/main/dist/main-tasks.jar"/>
+	<classpathentry kind="lib" path="update-publications/main/lib/je-3.2.23.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/bio-webapp/lib/biojava-1.7.1.jar"/>
+	<classpathentry kind="src" path="/fulldata"/>
+	<classpathentry kind="src" path="/intermine-api-main"/>
+	<classpathentry kind="src" path="/intermine-integrate-main"/>
+	<classpathentry kind="src" path="/bio-core-main"/>
+	<classpathentry kind="src" path="/intermine-model-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-core-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-postprocess-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-postprocess-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-skeleton-mine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-testall-dbmodel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-webapp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/bio-webapp-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/chomine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/flymine-dbmodel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/flymine-integrate"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/flymine-postprocess-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/flymine-webapp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/humanmine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/imbuild"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-api-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-integrate-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-jbrowse-endpoint"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-jbrowse-endpoint-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-model-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-objectstore-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-objectstore-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-pathquery"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-pathquery-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-web"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-web-tasks"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-web-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-webapp"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-webservice-client"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-webservice-client-samples"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-webservice-client-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/intermine-webtasks-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/testmodel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/testmodel-dbmodel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/testmodel-webapp-main"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/testmodel-webapp-test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/userprofile"/>
+	<classpathentry kind="output" path="update-publications/main/build/classes"/>
+</classpath>
