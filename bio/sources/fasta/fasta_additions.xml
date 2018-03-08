@@ -2,5 +2,14 @@
 <classes>
 	<class name="Protein" is-interface="true">
     	<attribute name="refseqAccession" type="java.lang.String"/>
+      <attribute name="refseqAccessionVersion" type="java.lang.String"/>
+	</class>
+  <class name="Gene" is-interface="true">
+    	<attribute name="refseqAccession" type="java.lang.String"/>
+      <attribute name="refseqAccessionVersion" type="java.lang.String"/>      
+	</class>
+  <class name="Chromosome" is-interface="true">
+    	<attribute name="refseqAccession" type="java.lang.String"/>
+      <attribute name="refseqAccessionVersion" type="java.lang.String"/>
 	</class>
 </classes>

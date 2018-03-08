@@ -15,7 +15,7 @@
         <attribute name="identifier" type="java.lang.String" />
         <attribute name="description" type="java.lang.String" />
         <collection name="proteins" referenced-type="Protein" reverse-reference="ecNumbers"/>
-    </class>  
+    </class>
     <class name="Transcript" is-interface="true">
         <collection name="comments" referenced-type="Comment"/>
     </class>
@@ -58,5 +58,5 @@
         <collection name="publications" referenced-type="Publication"/>
     </class>
 -->
-    
+
 </classes>

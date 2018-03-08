@@ -2,6 +2,23 @@
 <!-- This file details any extensions needed to the data model to store data from this source, everything else is automatically generated from the model description so this is all we need to do to add to the model. -->
 
 <classes>
-<!-- add any <class> elements here -->
-
+  <class name="Gene" is-interface="true">
+    <!-- <attribute name="strain" type="java.lang.String"/> -->    
+    <collection name="homologues" referenced-type="Homologue" reverse-reference="gene"/>
+  </class>
+  <class name="Protein" is-interface="true">
+    <attribute name="refseqAccession" type="java.lang.String"/>
+    <attribute name="refseqAccessionVersion" type="java.lang.String"/>
+    <attribute name="description" type="java.lang.String"/>
+  </class>
+  <class name="Homologue" is-interface="true">
+    <attribute name="type" type="java.lang.String"/>
+    <reference name="gene" referenced-type="Gene" reverse-reference="homologues"/>
+    <reference name="homologue" referenced-type="Gene"/>
+    <collection name="dataSets" referenced-type="DataSet"/>
+  </class>
+  <class name="Chromosome" is-interface="true">
+    <attribute name="refseqAccession" type="java.lang.String"/>
+    <attribute name="refseqAccessionVersion" type="java.lang.String"/>
+  </class>
 </classes>
