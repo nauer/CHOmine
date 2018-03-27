@@ -3,7 +3,7 @@
 
 <classes>
   <class name="Gene" is-interface="true">
-    <!-- <attribute name="strain" type="java.lang.String"/> -->    
+    <!-- <attribute name="strain" type="java.lang.String"/> -->
     <collection name="homologues" referenced-type="Homologue" reverse-reference="gene"/>
   </class>
   <class name="Protein" is-interface="true">
@@ -21,4 +21,8 @@
     <attribute name="refseqAccession" type="java.lang.String"/>
     <attribute name="refseqAccessionVersion" type="java.lang.String"/>
   </class>
+  <class name="Transcript" is-interface="true">
+    <attribute name="refseqAccession" type="java.lang.String"/>
+    <attribute name="refseqAccessionVersion" type="java.lang.String"/>
+  </class>  
 </classes>
