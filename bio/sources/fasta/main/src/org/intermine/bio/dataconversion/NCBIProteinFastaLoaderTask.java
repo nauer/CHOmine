@@ -49,7 +49,7 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
                   return null;
               }
               name = bits[bits.length - 1];
-              
+
               name = name.split("\\|")[0];
           }
           else
@@ -68,23 +68,29 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
      * @param dataSet the DataSet object
      * @throws ObjectStoreException if a store() fails during processing
      */
-    
+
     @Override
     protected void  extraProcessing(ProteinSequence bioJavaSequence, org.intermine.model.bio.Sequence ncbiProteinSequence, BioEntity bioEntity, Organism organism, DataSet dataSet)
-    		throws ObjectStoreException 
+    		throws ObjectStoreException
     {
     	//String header = bioJavaSequence.getOriginalHeader();
-		
+
     	String refseqId = getProteinName(bioJavaSequence);
-	
+
     	if (refseqId != null)
     	{
-    		bioEntity.setFieldValue("refseqAccession", refseqId);
+        String[] bits = refseqId.split("\\.");
+
+        if (bits.length == 2)
+        {
+    		  bioEntity.setFieldValue("refseqAccession", bits[0]);
+          bioEntity.setFieldValue("refseqAccessionVersion", bits[1]);
+        }
     	}
 //    	System.out.print("DEBUG: ");
 //    	System.out.print(bioJavaSequence.getOriginalHeader());
 //    	System.out.print(" - ");
 //    	System.out.println(refseqId);
-	
+
 	}
 }
