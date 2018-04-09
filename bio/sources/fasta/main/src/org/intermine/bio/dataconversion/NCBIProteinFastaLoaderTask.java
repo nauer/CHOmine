@@ -17,6 +17,7 @@ import org.intermine.model.bio.Organism;
 import org.intermine.objectstore.ObjectStoreException;
 import org.biojava.bio.seq.Sequence;
 import org.biojava3.core.sequence.ProteinSequence;
+import java.security.MessageDigest;
 
 /**
  * A loader that works for NCBI protein FASTA files:
@@ -75,17 +76,23 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
     {
     	//String header = bioJavaSequence.getOriginalHeader();
 
+    	
     	String refseqId = getProteinName(bioJavaSequence);
 
     	if (refseqId != null)
     	{
         String[] bits = refseqId.split("\\.");
 
-        if (bits.length == 2)
-        {
-    		  bioEntity.setFieldValue("refseqAccession", bits[0]);
-          bioEntity.setFieldValue("refseqAccessionVersion", bits[1]);
-        }
+	        if (bits.length == 2)
+	        {
+	    		  bioEntity.setFieldValue("refseqAccession", bits[0]);
+	    		  bioEntity.setFieldValue("refseqAccessionVersion", bits[1]);
+	        }
+	        bioEntity.setFieldValue("length", bioJavaSequence.getLength());
+	        
+	        MessageDigest md = MessageDigest.getInstance("MD5");
+	        byte[] thedigest = md.digest(bioJavaSequence.getSequenceAsString().getBytes());
+	        bioEntity.setFieldValue("md5checksum", thedigest);
     	}
 //    	System.out.print("DEBUG: ");
 //    	System.out.print(bioJavaSequence.getOriginalHeader());
