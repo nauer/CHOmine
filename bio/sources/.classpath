@@ -187,7 +187,6 @@
 	<classpathentry kind="lib" path="retired/biopax/main/lib/iri.jar"/>
 	<classpathentry kind="lib" path="retired/biopax/main/lib/paxtools-4.1.6.jar"/>
 	<classpathentry kind="lib" path="retired/biopax/main/lib/slf4j-api-1.5.6.jar"/>
-	<classpathentry kind="lib" path="retired/biopax/main/lib/slf4j-log4j12-1.5.6.jar"/>
 	<classpathentry kind="lib" path="update-publications/main/dist/main-tasks.jar"/>
 	<classpathentry kind="lib" path="update-publications/main/lib/je-3.2.23.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
@@ -206,7 +205,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-webapp"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-webapp-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/chomine"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/flymine-dbmodel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/flymine-integrate"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/flymine-postprocess-main"/>

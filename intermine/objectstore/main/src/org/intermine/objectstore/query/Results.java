@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Random;
+import java.util.Spliterator;
 
 import org.apache.log4j.Logger;
 import org.intermine.objectstore.DataChangedException;
@@ -438,4 +439,10 @@ public class Results extends AbstractList<Object> implements LazyCollection<Obje
         // Stringification must not hit the DB.
         return "[Results " + hashCode + "]";
     }
+
+	@Override
+	public Spliterator<Object> spliterator() {
+		// TODO Auto-generated method stub
+		return super.spliterator();
+	}
 }

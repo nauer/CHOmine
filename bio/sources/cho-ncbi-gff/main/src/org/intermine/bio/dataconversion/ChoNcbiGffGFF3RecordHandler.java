@@ -13,8 +13,8 @@ package org.intermine.bio.dataconversion;
 import org.intermine.bio.io.gff3.GFF3Record;
 import org.intermine.metadata.Model;
 import org.intermine.xml.full.Item;
-import org.intermine.model.bio.Protein;
-import org.intermine.model.bio.Gene;
+//import org.intermine.model.bio.Protein;
+//import org.intermine.model.bio.Gene;
 import org.apache.log4j.Logger;
 
 

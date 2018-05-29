@@ -90,9 +90,9 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
 	        }
 	        bioEntity.setFieldValue("length", bioJavaSequence.getLength());
 	        
-	        MessageDigest md = MessageDigest.getInstance("MD5");
-	        byte[] thedigest = md.digest(bioJavaSequence.getSequenceAsString().getBytes());
-	        bioEntity.setFieldValue("md5checksum", thedigest);
+	        //MessageDigest md = MessageDigest.getInstance("MD5");
+	        //byte[] thedigest = md.digest(bioJavaSequence.getSequenceAsString().getBytes());
+	        //bioEntity.setFieldValue("md5checksum", thedigest);
     	}
 //    	System.out.print("DEBUG: ");
 //    	System.out.print(bioJavaSequence.getOriginalHeader());
