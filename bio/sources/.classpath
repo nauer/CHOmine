@@ -200,7 +200,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-postprocess-main"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-postprocess-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-skeleton-mine"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/bio-testall-dbmodel"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bio-testall-dbmodel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-main"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-webapp"/>
