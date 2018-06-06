@@ -64,6 +64,22 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
           return name;
       }
 
+      
+	    /*protected String toHexString(byte[] bytes) 
+	    {
+	    	StringBuilder hexString = new StringBuilder();
+	
+	    	for (int i = 0; i < bytes.length; i++) 
+	    	{
+	    		String hex = Integer.toHexString(0xFF & bytes[i]);
+		        if (hex.length() == 1) {
+		            hexString.append('0');
+		        }
+		        hexString.append(hex);
+		    }
+	
+	    	return hexString.toString();
+	    }*/
     /**
      * Do any extra processing needed for this record (extra attributes, objects, references etc.)
      * This method is called before the new objects are stored
@@ -83,33 +99,37 @@ public class NCBIProteinFastaLoaderTask extends FastaLoaderTask
 
     	
     	String refseqId = getProteinName(bioJavaSequence);
-    	System.out.println(refseqId);
+    	//System.out.println(refseqId);
     	if (refseqId != null)
     	{
         String[] bits = refseqId.split("\\.");
 
 	        if (bits.length == 2)
 	        {
-	        	  System.out.println(bits[0] + ";" + bits[1]);
+	        	  // System.out.println(bits[0] + ";" + bits[1]);
 	    		  bioEntity.setFieldValue("refseqAccession", bits[0]);
 	    		  bioEntity.setFieldValue("refseqAccessionVersion", bits[1]);
+	    		  bioEntity.setFieldValue("primaryIdentifier", refseqId);
 	        }
 	        bioEntity.setFieldValue("length", bioJavaSequence.getLength());
 	        
-	        try {
+	        /*try {
 				MessageDigest md = MessageDigest.getInstance("MD5");
 				byte[] thedigest = md.digest(bioJavaSequence.getSequenceAsString().getBytes());
-				String thedigest2 = new String(thedigest);
-				bioEntity.setFieldValue("md5checksum", thedigest2);
-				System.out.println(bioJavaSequence.getSequenceAsString());
-				System.out.println(thedigest);
-				System.out.println(thedigest2);
+				String thedigest2 = toHexString(thedigest);
+				//String thedigest2 = new String(thedigest);
+				//System.out.println(thedigest2);
+				//bioEntity.setFieldValue("md5checksum", thedigest2);
+				
+				//System.out.println(bioJavaSequence.getSequenceAsString());
+				//System.out.println(thedigest);
+				//System.out.println(thedigest2);
+				
+				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-	        
-	        
+			} */     	       
     	}
 //    	System.out.print("DEBUG: ");
 //    	System.out.print(bioJavaSequence.getOriginalHeader());
