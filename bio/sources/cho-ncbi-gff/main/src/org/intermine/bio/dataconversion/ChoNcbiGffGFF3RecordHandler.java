@@ -65,8 +65,8 @@ public class ChoNcbiGffGFF3RecordHandler extends GFF3RecordHandler
         //String symbol = record.getAttributes().get("symbol");
         //feature.setAttribute("symbol", symbol);
 
-        LOG.error("BEFORE CDS" + type);
-        LOG.error(record);
+        //LOG.error("BEFORE CDS" + type);
+        //LOG.error(record);
         // Type CDS
         if ("CDS".equals(type))
         {
