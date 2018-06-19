@@ -12,6 +12,7 @@
     <attribute name="isFragment" type="java.lang.Boolean"/>
     <attribute name="isUniprotCanonical" type="java.lang.Boolean"/>
     <attribute name="uniprotAccession" type="java.lang.String"/>
+    <attribute name="uniprotAccessionVersion" type="java.lang.String"/>
     <attribute name="uniprotName" type="java.lang.String"/>
     <attribute name="strain" type="java.lang.String"/>
     <reference name="canonicalProtein" referenced-type="Protein" reverse-reference="isoforms" />
