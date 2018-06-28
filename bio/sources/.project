@@ -3,7 +3,24 @@
 	<name>sources</name>
 	<comment></comment>
 	<projects>
+		<project>bio-core-main</project>
+		<project>bio-core-test</project>
 		<project>bio-testall-dbmodel</project>
+		<project>bio-tools-main</project>
+		<project>bio-tools-test</project>
+		<project>intermine-api-main</project>
+		<project>intermine-api-test</project>
+		<project>intermine-integrate-main</project>
+		<project>intermine-integrate-test</project>
+		<project>intermine-jbrowse-endpoint</project>
+		<project>intermine-jbrowse-endpoint-test</project>
+		<project>intermine-model-main</project>
+		<project>intermine-model-test</project>
+		<project>intermine-objectstore-main</project>
+		<project>intermine-objectstore-test</project>
+		<project>intermine-pathquery</project>
+		<project>intermine-pathquery-test</project>
+		<project>intermine-web</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

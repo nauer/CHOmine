@@ -192,14 +192,14 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/bio-webapp/lib/biojava-1.7.1.jar"/>
 	<classpathentry kind="src" path="/fulldata"/>
-	<classpathentry kind="src" path="/intermine-api-main"/>
-	<classpathentry kind="src" path="/intermine-integrate-main"/>
-	<classpathentry kind="src" path="/bio-core-main"/>
-	<classpathentry kind="src" path="/intermine-model-main"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/bio-core-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/bio-postprocess-main"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/bio-postprocess-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/bio-skeleton-mine"/>
+	<classpathentry exported="true" kind="src" path="/intermine-api-main"/>
+	<classpathentry exported="true" kind="src" path="/intermine-integrate-main"/>
+	<classpathentry exported="true" kind="src" path="/bio-core-main"/>
+	<classpathentry exported="true" kind="src" path="/intermine-model-main"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bio-core-test"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bio-postprocess-main"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bio-postprocess-test"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bio-skeleton-mine"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bio-testall-dbmodel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-main"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/bio-tools-test"/>
@@ -215,7 +215,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/intermine-integrate-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/intermine-jbrowse-endpoint"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/intermine-jbrowse-endpoint-test"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/intermine-model-test"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/intermine-model-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/intermine-objectstore-main"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/intermine-objectstore-test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/intermine-pathquery"/>
