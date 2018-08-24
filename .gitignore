@@ -12,7 +12,13 @@ executeLog*
 *.class
 productionLog
 *~
+<<<<<<< HEAD
 .metadata/
+=======
+.project
+.classpath
+
+>>>>>>> a86fd28aa53398b674af0541b57615a9de339352
 !/intermine/webservice/client/download/dist/
 
 # /intermine/objectstore/main/
@@ -205,4 +211,6 @@ apache-tomcat*
 prefixed
 failures.list
 *.jks
-biotestmine/project.xml
+*.iml
+out/
+.gradle/
