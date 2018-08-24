@@ -25,4 +25,8 @@
     <attribute name="refseqAccession" type="java.lang.String"/>
     <attribute name="refseqAccessionVersion" type="java.lang.String"/>
   </class>
+  <class name="MRNA" is-interface="true">
+    <attribute name="refseqAccession" type="java.lang.String"/>
+    <attribute name="refseqAccessionVersion" type="java.lang.String"/>
+  </class>
 </classes>

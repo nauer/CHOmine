@@ -360,7 +360,11 @@ public class EntrezPublicationsRetriever
      * @throws Exception if an error occurs
      */
     protected Reader getReader(Set<Integer> ids) throws Exception {
-    	String url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi";
+
+    /* Patch - Use POST instead of GET
+     * Author: Norbert Auer
+     */  
+    String url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi";
 		URL obj = new URL(url);
 		HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
 
@@ -370,7 +374,7 @@ public class EntrezPublicationsRetriever
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 
 		String urlParameters = "tool=flymine&db=pubmed&rettype=abstract&retmode=xml&id=" + StringUtil.join(ids, ",");
-		
+
 		// Send post request
 		con.setDoOutput(true);
 		DataOutputStream wr = new DataOutputStream(con.getOutputStream());
